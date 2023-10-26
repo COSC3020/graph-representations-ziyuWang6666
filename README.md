@@ -25,12 +25,12 @@ A function that converts an adjacency list to an adjacency matrix's time complex
 
 3. for (var i = 0; i < V; i++) {// two for loops, first for loop depend on vertices, $O(V)$
 
-4. for (var j of adjList[i])//This for of depend on edges, $O(E)$
+4. for (var j of adjList[i])//This for of depend on edges on a particular vertex, $O(degree(v))$
 
 5. matrix[i][j] = 1;//constant time $O(1)$
    
 The initial matrix that creates a 2D matrix takes $O(v^2)$ time and is not dominated because it just creates a 2D matrix with each item being 0.
-So, the total time complexity is $O(V*E)$.
+So, the total time complexity is $O(V*degree(v))$.
 
 ## Bonus
 
