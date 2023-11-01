@@ -17,7 +17,7 @@ Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
 ## Answer
-A function that converts an adjacency list to an adjacency matrix's time complexity is $O(V*E)$:
+A function that converts an adjacency list to an adjacency matrix's time complexity is $O(V+E)$:
 
 1. var V = adjList.length; $O(1)$
 
@@ -30,7 +30,7 @@ A function that converts an adjacency list to an adjacency matrix's time complex
 5. matrix[i][j] = 1;//constant time $O(1)$
    
 The initial matrix that creates a 2D matrix takes $O(v^2)$ time and is not dominated because it just creates a 2D matrix with each item being 0.
-So, the total time complexity is $O(V*E)$.
+Since this algorithm iterates all edges for each one of the nodes, the total time complexity is $O(V+E)$.
 
 ## Bonus
 
